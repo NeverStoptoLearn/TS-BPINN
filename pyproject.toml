@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77.0.3", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,6 +7,8 @@ name = "ts-bpinn"
 version = "0.1.0"
 description = "Refactored research code for TS-BPINN"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.10,<3.13"
 dependencies = ["numpy==1.26.4", "torch==2.6.0", "matplotlib==3.9.4"]
 
