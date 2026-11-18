@@ -1,0 +1,51 @@
+{
+  "physics": {
+    "length": 10.0,
+    "duration": 1.0,
+    "velocity": 1.0,
+    "dispersion": 0.1,
+    "width": 1.0,
+    "true_position": 4.0,
+    "true_amplitude": 1.0,
+    "noise_std": 0.1
+  },
+  "device": "cpu",
+  "model": {
+    "hidden": [
+      256,
+      128,
+      256
+    ],
+    "initial_position": 3,
+    "initial_amplitude": 0.8
+  },
+  "data": {
+    "nx": 100,
+    "nt": 100
+  },
+  "prediction_samples": 100,
+  "training": {
+    "learning_rate": 0.001,
+    "kl_weight": 0.0001,
+    "stages": [
+      {
+        "epochs": 5000,
+        "weights": [
+          0.2,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "epochs": 20000,
+        "weights": [
+          0.2,
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  }
+}
