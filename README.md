@@ -93,7 +93,20 @@ python -m pytest -q
 
 ## Citation
 
-Please cite the linked paper when using this code. Machine-readable citation metadata is provided in `CITATION.cff`.
+If you use this code in your research, please cite:
+
+```bibtex
+@article{zhou2026tsbpinn,
+  title   = {Two-Stage Bayesian Physics-Informed Neural Networks for Groundwater Contaminant Source Identification},
+  author  = {Zhou, Zhengchen and Yan, Xuesong and Hu, Chengyu},
+  journal = {Journal of Water Resources Planning and Management},
+  volume  = {152},
+  number  = {2},
+  pages   = {04025075},
+  year    = {2026},
+  doi     = {10.1061/JWRMD5.WRENG-7084}
+}
+```
 
 ## Contact
 
