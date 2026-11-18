@@ -62,6 +62,31 @@ python -m pip install -e ".[dev]"
 
 For a CPU-only PyTorch installation on Windows/Linux, first run `python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu`. The optional top-level `threads` setting controls CPU training threads (default 2).
 
+## Third-party software and acknowledgments
+
+This implementation builds on the following open-source software. We thank their authors and contributors.
+
+| Software | Version | Use in this repository |
+| --- | --- | --- |
+| [PyTorch](https://pytorch.org/) | 2.6.0 | Stochastic neural-network layers, automatic differentiation, Adam optimization, and checkpoint serialization |
+| [NumPy](https://numpy.org/) | 1.26.4 | Result arrays and numerical output |
+| [Matplotlib](https://matplotlib.org/) | 3.9.4 | Concentration, loss, and uncertainty plots |
+
+PyTorch is distributed under its [BSD-style license](https://github.com/pytorch/pytorch/blob/v2.6.0/LICENSE). Dependencies retain their upstream licenses.
+
+The included example implements its analytical ADE reference in `data.py`. AdePy, [FloPy](https://flopy.readthedocs.io/en/stable/), and pymoo are not runtime dependencies of this implementation. FloPy-based modeling scripts are not included in this repository.
+
+Software reference:
+
+```bibtex
+@software{pytorch,
+  author  = {{PyTorch Contributors}},
+  title   = {{PyTorch}},
+  version = {2.6.0},
+  url     = {https://github.com/pytorch/pytorch}
+}
+```
+
 ## Run
 
 From the project root:
