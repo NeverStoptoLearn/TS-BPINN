@@ -74,7 +74,7 @@ This implementation builds on the following open-source software. We thank their
 
 PyTorch is distributed under its [BSD-style license](https://github.com/pytorch/pytorch/blob/v2.6.0/LICENSE). Dependencies retain their upstream licenses.
 
-The included example implements its analytical ADE reference in `data.py`. AdePy, [FloPy](https://flopy.readthedocs.io/en/stable/), and pymoo are not runtime dependencies of this implementation. FloPy-based modeling scripts are not included in this repository.
+The analytical ADE reference is implemented in `data.py`.
 
 Software reference:
 
